@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Screen - RedM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="container">
+        <!-- Vignette overlay -->
+        <div class="vignette"></div>
+        
+        <!-- Blood overlay effect -->
+        <div class="blood-overlay"></div>
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+            
+            <!-- Skull decoration -->
+            <div class="skull-decoration">
+                <div class="skull">💀</div>
+            </div>
+
+            <!-- Main title with blood drips -->
+            <div class="title-container">
+                <h1 class="death-title">YOU ARE DYING</h1>
+                <div class="blood-drips">
+                    <div class="drip" style="--delay: 0s; --left: 5%; --height: 60px;"></div>
+                    <div class="drip" style="--delay: 1.5s; --left: 12%; --height: 80px;"></div>
+                    <div class="drip" style="--delay: 0.8s; --left: 22%; --height: 50px;"></div>
+                    <div class="drip" style="--delay: 2.2s; --left: 30%; --height: 70px;"></div>
+                    <div class="drip" style="--delay: 0.3s; --left: 38%; --height: 90px;"></div>
+                    <div class="drip" style="--delay: 1.8s; --left: 48%; --height: 55px;"></div>
+                    <div class="drip" style="--delay: 2.5s; --left: 55%; --height: 75px;"></div>
+                    <div class="drip" style="--delay: 0.6s; --left: 65%; --height: 85px;"></div>
+                    <div class="drip" style="--delay: 1.2s; --left: 75%; --height: 45px;"></div>
+                    <div class="drip" style="--delay: 2s; --left: 85%; --height: 65px;"></div>
+                    <div class="drip" style="--delay: 0.9s; --left: 95%; --height: 55px;"></div>
+                </div>
+            </div>
+            
+            <!-- Decorative line -->
+            <div class="divider">
+                <span class="star">★</span>
+                <span class="line"></span>
+                <span class="star">★</span>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions">
+                <p class="help-text">Type <span class="command">/help</span> to call for medical assistance</p>
+                
+                <div class="rules">
+                    <h2 class="rules-title">ROLEPLAY RULES</h2>
+                    <ul>
+                        <li>If revived by a doctor, simulate weakness and injury</li>
+                        <li>If you respawn, your memory of recent events is lost</li>
+                        <li>You cannot use information from before your death</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom decoration -->
+            <div class="bottom-decoration">
+                <span class="star">★</span>
+                <span class="text">REST IN PEACE</span>
+                <span class="star">★</span>
+            </div>
+
+        </div>
+
+        <!-- Animated dust particles -->
+        <div class="dust-particle" style="--delay: 0s; --x: 10%;"></div>
+        <div class="dust-particle" style="--delay: 2s; --x: 30%;"></div>
+        <div class="dust-particle" style="--delay: 4s; --x: 50%;"></div>
+        <div class="dust-particle" style="--delay: 1s; --x: 70%;"></div>
+        <div class="dust-particle" style="--delay: 3s; --x: 90%;"></div>
+    </div>
+</body>
+</html>
